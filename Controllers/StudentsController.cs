@@ -8,11 +8,11 @@ using Microsoft.Extensions.Logging;
 
 namespace OopMvcApplication.Controllers
 {
-    [Route("[controller]")]
+    //[Route("[controller]")]
     public class StudentsController : Controller
     {        
 
-        [HttpGet]
+        //[HttpGet]
         public IActionResult Index()
         {
             ViewBag.Student = "Soeurng Lim";
