@@ -12,10 +12,11 @@ namespace OopMvcApplication.Controllers
     public class StudentsController : Controller
     {        
 
+        [HttpGet]
         public IActionResult Index()
         {
             ViewBag.Student = "Soeurng Lim";
-        
+
             return View();
         }
 
