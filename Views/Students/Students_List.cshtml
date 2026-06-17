@@ -1,0 +1,9 @@
+@{
+    ViewData["Title"] = "Students_List";
+}
+
+<ul>
+    @foreach(string itm in @ViewBag.students){
+        <li>@itm</li>
+    }    
+</ul>

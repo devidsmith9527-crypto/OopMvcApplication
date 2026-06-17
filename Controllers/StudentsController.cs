@@ -28,6 +28,13 @@ namespace OopMvcApplication.Controllers
             return View();
         }
 
+        [HttpGet("Students/List")]//Attribute Route
+        public IActionResult Students_List()
+        {
+            List<string> students = new(){"Dara","Kolab","Sophy"};
+            ViewBag.students = students;
+            return View(ViewBag.students);
+        }
         
     }
 }
