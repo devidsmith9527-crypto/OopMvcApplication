@@ -21,5 +21,19 @@ namespace OopMvcApplication.Controllers
             ViewBag.PageTitle = pagetitle;
             return View();
         }
+
+        public IActionResult ProductList()
+        {
+            List<string> products = new() 
+            { 
+                "iPhone 15 Pro Max", 
+                "MacBook Air M3", 
+                "Apple Watch Series 9", 
+                "AirPods Pro 2" 
+            };
+
+            ViewBag.Products = products;
+            return View();
+        }
     }
 }
