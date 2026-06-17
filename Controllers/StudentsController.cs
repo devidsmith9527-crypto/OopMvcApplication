@@ -20,6 +20,13 @@ namespace OopMvcApplication.Controllers
             return View();
         }
 
+        public IActionResult StudentInfo()
+        {
+            ViewBag.name = "Soeurng Lim";
+            ViewBag.gender = "Male";
+            return View();
+        }
+
         
     }
 }
