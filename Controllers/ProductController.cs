@@ -9,10 +9,11 @@ using Microsoft.Extensions.Logging;
 
 namespace OopMvcApplication.Controllers
 {
-    [Route("[controller]")]
+    [Route("Product")]
     public class ProductController : Controller
     {      
 
+        [HttpGet("Index")]
         public IActionResult Index()
         {
             List<Product> products = new()
