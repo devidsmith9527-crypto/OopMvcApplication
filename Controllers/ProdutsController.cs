@@ -23,5 +23,15 @@ namespace OopMvcApplication.Controllers
             return View();
         }
         
+        [HttpGet("Customer")]
+        public IActionResult Customer()
+        {
+            ViewData["PageTitle"] = "List of Customers";
+            ViewBag.CustomerID = "Cust-0001";
+            ViewBag.CustomerName = "John Doe";
+            ViewBag.CustomerEmail = "john.doe@example.com";
+            return View();
+        }
+
     }
 }
