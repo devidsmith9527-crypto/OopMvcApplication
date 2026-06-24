@@ -13,7 +13,7 @@ namespace OopMvcApplication.Controllers
     public class ProductController : Controller
     {      
 
-        [HttpGet("Index")]
+        [HttpGet]
         public IActionResult Index()
         {
             List<Product> products = new()
