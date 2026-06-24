@@ -1,0 +1,28 @@
+@model List<OopMvcApplication.Models.Product>
+
+<div class="container mt-4">
+    <h2 class="text-primary mb-3">បញ្ជីទំនិញ (Strongly-typed Model View)</h2>
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>លេខកូដ</th>
+                <th>ឈ្មោះទំនិញ</th>
+                <th>តម្លៃឯកតា</th>
+                <th>ចំនួន</th>
+                <th>តម្លៃសរុប</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ProductId</td>
+                    <td>@item.ProductName</td>
+                    <td>$@item.Price</td>
+                    <td>@item.Qty</td>
+                    <td>$@item.CalculateTotal()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
