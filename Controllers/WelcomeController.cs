@@ -11,7 +11,7 @@ namespace OopMvcApplication.Controllers
     [Route("Welcome")]
     public class WelcomeController : Controller
     {        
-        [HttpGet]
+        [HttpGet()]
         public IActionResult Index()
         {
             ViewData["Message"] = "Welcome to ASP.NET Core MVC!";
