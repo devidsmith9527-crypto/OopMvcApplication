@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace OopMvcApplication.Models
+{
+    public class Student
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Major { get; set; } = string.Empty;
+        public Student(int id, string name, string major) 
+        { 
+            Id = id; 
+            Name = name; 
+            Major = major; 
+        }
+    }
+}
