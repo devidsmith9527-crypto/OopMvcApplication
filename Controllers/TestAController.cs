@@ -8,19 +8,17 @@ using Microsoft.Extensions.Logging;
 
 namespace OopMvcApplication.Controllers
 {
-    [Route("Test")]
-    public class TestController : Controller
+    [Route("TestA")]
+    public class TestAController : Controller
     {
-        [HttpGet]
-        public IActionResult Index()
-        {
-            return View();
-        }
+        
 
         [HttpGet("Test1")]
         public IActionResult Test1()
         {
             return View();
         }
+
+
     }
 }
